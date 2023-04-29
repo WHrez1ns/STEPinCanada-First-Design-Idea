@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Golos Text", "Pacifico", "Roboto", sans-serif;
+}
+
+body {
+  overflow: visible;
+}
+
+/* img responsive */
+img {
+  max-width: 100%;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--blueSky-escuro);
+}
+
+/* Main - Banner */
+.banner {
+  width: 100%;
+  height: 100vh;
+  padding: 160px 60px;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom,
+      var(--blueSky),
+      #ffffff65,
+      var(--blueSky-escuro)),
+    url(../img/bannerBuy.jpg);
+  background-size: cover;
+}
+
+.banner p {
+  color: var(--darkColor);
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+/* Botão Style */
+.btn {
+  color: var(--lightColor);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 55px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  background: linear-gradient(to left, var(--redStep-dark), var(--redStep));
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  letter-spacing: 0.09em;
+  scale: 1.1;
+}
+
+/* Main - Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  width: 75rem;
+  position: relative;
+  bottom: 50px;
+  background: var(--safeDark);
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.75);
+}
+
+.card p {
+  color: var(--lightColor);
+  font-size: 45px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card h1 {
+  color: var(--red);
+  font-size: 50px;
+}
+
+.card label {
+  color: var(--lightColor);
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 955px) {
+
+  /* Main - banner - Mobile */
+  .banner {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner p {
+    color: var(--darkColor);
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  /* Main - card - Mobile */
+  .card {
+    padding: 40px;
+    width: 100%;
+    border-radius: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0);
+  }
+
+  .card p {
+    font-size: 40px;
+  }
+}

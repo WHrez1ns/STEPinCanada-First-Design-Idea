@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/logo.webp" />
+  <title>STEP - Home</title>
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/root.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav id="menu">
+      <img src="img/logo.webp" alt="Logo STEP" id="logo" onclick="link('index.html')" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page/description.html">Description</a></li>
+        <li><a href="page/budget.html">Budget</a></li>
+      </ul>
+      <i class="bx bx-menu" id="menu_icon"></i>
+    </nav>
+  </header>
+  <main>
+    <div class="banner">
+      <p>
+        Aprenda <a style="color: var(--redStep-dark)">inglês</a> com
+        <br />
+        professores nativos do <br />
+        Canadá: aulas online de <br />
+        qualidade e imersão cultural!
+      </p>
+      <button class="btn" onclick="link('page/description.html')">Saiba mais</button>
+    </div>
+    <div class="card">
+      <p>
+        Escolha a <a style="color: var(--red)">duração</a> ideal
+        <br />
+        para o seu curso de inglês <br />
+        online com a nossa escola <br />
+        no Canadá
+      </p>
+      <i class="bx bxs-down-arrow bx-fade-up" id="call_arrow"></i>
+      <div class="orcamento">
+        <div class="orcamento_items">
+          <h1>Descubra o valor do seu curso!</h1>
+          <p>Preencha o formulário com a quantidade de semanas desejadas:</p>
+          <div class="calcular">
+            <input type="number" />
+            <button class="btn">Calcular</button>
+          </div>
+        </div>
+        <img src="img/English teacher-pana.svg" alt="English Teacher" id="teacher_img" />
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_items">
+      <div class="footer_item">
+        <h1>STEP</h1>
+        <p>
+          Quanto mais consistente o planejamento, <br />
+          melhor é a experiência
+        </p>
+      </div>
+      <div class="social_midia">
+        <h1>Redes Sociais</h1>
+        <div class="social_icons">
+          <a href="https://www.instagram.com/stepincanada/"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="http://bit.ly/STEPfone"><i class="bx bxl-whatsapp-square"></i></a>
+          <a href="https://www.facebook.com/StepinCanadaBR/"><i class="bx bxl-facebook-circle"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="tracado"></div>
+    <p>@ 2023 Todos os direitos reservados. Developed by <destaque style="cursor: pointer; color: var(--avalon);"
+        onclick="link('https:\/\/avalontech.net.br')">Avalon Tech</destaque>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

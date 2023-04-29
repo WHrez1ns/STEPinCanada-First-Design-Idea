@@ -1,0 +1,17 @@
+/* Root colors */
+:root {
+  --darkColor: #0f0f0f;
+  --safeDark: #090f25;
+  --lightColor: #f9f9f9;
+  --lightColorOpacity5: #ffffff0d;
+  --greyColor: #9b9b9b;
+  --red: #ad0a0a;
+  --redStep: #ba1d30;
+  --redStep-dark: #74050b;
+  --blueSky: #4f9ed3;
+  --blueSky-escuro: #004472;
+  --avalon: #3f99d1;
+  --greenColor: #179717;
+  --instaColor: #b6152b;
+  --starColor: #ffff16;
+}
